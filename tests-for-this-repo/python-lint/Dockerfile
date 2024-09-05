@@ -1,4 +1,4 @@
-FROM python:3.7-alpine
+FROM python:3.12.5-alpine
 
 ENTRYPOINT pytest --flake8 --junit-xml junit.xml
 VOLUME ["/mnt"]
